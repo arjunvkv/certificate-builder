@@ -1,0 +1,60 @@
+{
+  "name": "Test Certificate Template",
+  "description": "A simple test template for debugging",
+  "createdAt": "2024-12-17T10:16:00.000Z",
+  "updatedAt": "2024-12-17T10:16:00.000Z",
+  "prefixes": [
+    {
+      "id": "name",
+      "name": "Student Name",
+      "value": "John Doe",
+      "type": "name"
+    },
+    {
+      "id": "course",
+      "name": "Course Name",
+      "value": "Test Course",
+      "type": "course"
+    },
+    {
+      "id": "date",
+      "name": "Completion Date",
+      "value": "2024-12-17",
+      "type": "date"
+    }
+  ],
+  "elements": [
+    {
+      "id": "text-1",
+      "type": "text",
+      "content": "Certificate of Completion",
+      "x": 300,
+      "y": 150,
+      "width": 500,
+      "height": 60,
+      "fontSize": 32,
+      "color": "#000000",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text-2",
+      "type": "text",
+      "content": "This certifies that {{name}} has successfully completed {{course}} on {{date}}",
+      "x": 150,
+      "y": 300,
+      "width": 800,
+      "height": 100,
+      "fontSize": 18,
+      "color": "#333333",
+      "fontFamily": "Arial"
+    }
+  ],
+  "canvasDimensions": {
+    "width": 1123,
+    "height": 794
+  },
+  "bgFileName": null,
+  "bgFileSize": null,
+  "bgFileType": null,
+  "version": "1.0"
+}

@@ -1,65 +1,126 @@
-import Image from "next/image";
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+      <div className="max-w-4xl mx-auto p-8">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">Certificate System</h1>
+          <p className="text-xl text-gray-600">
+            Professional certificate creation and generation platform
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Designer App */}
+          <Link href="/designer" className="group">
+            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+              <div className="text-center">
+                <div className="text-6xl mb-4">🎨</div>
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">Designer</h2>
+                <p className="text-gray-600 mb-6">
+                  Create certificate templates with custom layouts, backgrounds, and dynamic fields
+                </p>
+                
+                <div className="space-y-2 text-sm text-gray-500 mb-6">
+                  <div className="flex items-center justify-center gap-2">
+                    <span>✓</span>
+                    <span>Upload background images</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <span>✓</span>
+                    <span>Add text and image elements</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <span>✓</span>
+                    <span>Define dynamic fields</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <span>✓</span>
+                    <span>Save as reusable templates</span>
+                  </div>
+                </div>
+
+                <div className="px-6 py-3 bg-blue-600 text-white rounded-lg group-hover:bg-blue-700 transition-colors">
+                  Start Designing
+                </div>
+              </div>
+            </div>
+          </Link>
+
+          {/* Generator App */}
+          <Link href="/generator" className="group">
+            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+              <div className="text-center">
+                <div className="text-6xl mb-4">⚡</div>
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">Generator</h2>
+                <p className="text-gray-600 mb-6">
+                  Generate certificates from templates with automatic form creation and PDF download
+                </p>
+                
+                <div className="space-y-2 text-sm text-gray-500 mb-6">
+                  <div className="flex items-center justify-center gap-2">
+                    <span>✓</span>
+                    <span>Browse available templates</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <span>✓</span>
+                    <span>Auto-generated forms</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <span>✓</span>
+                    <span>Fill recipient details</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <span>✓</span>
+                    <span>Download PDF certificates</span>
+                  </div>
+                </div>
+
+                <div className="px-6 py-3 bg-green-600 text-white rounded-lg group-hover:bg-green-700 transition-colors">
+                  Generate Certificates
+                </div>
+              </div>
+            </div>
+          </Link>
         </div>
-      </main>
+
+        {/* Features */}
+        <div className="mt-16 bg-white rounded-xl shadow-lg p-8">
+          <h3 className="text-2xl font-bold text-gray-800 text-center mb-8">System Features</h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-3xl mb-3">🔄</div>
+              <h4 className="font-semibold text-gray-800 mb-2">Shared Storage</h4>
+              <p className="text-gray-600 text-sm">
+                Templates created in Designer are automatically available in Generator
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-3xl mb-3">📋</div>
+              <h4 className="font-semibold text-gray-800 mb-2">Auto Forms</h4>
+              <p className="text-gray-600 text-sm">
+                Forms are automatically generated based on template field definitions
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-3xl mb-3">💾</div>
+              <h4 className="font-semibold text-gray-800 mb-2">Persistent Data</h4>
+              <p className="text-gray-600 text-sm">
+                All templates and images are saved with unique codes for organization
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="text-center mt-12 text-gray-500 text-sm">
+          <p>Professional certificate creation made simple</p>
+        </div>
+      </div>
     </div>
   );
 }

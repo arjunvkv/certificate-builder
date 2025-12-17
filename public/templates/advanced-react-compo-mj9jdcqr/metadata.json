@@ -1,0 +1,66 @@
+{
+  "name": "Advanced React components",
+  "description": "",
+  "createdAt": "2025-12-17T04:53:25.853Z",
+  "updatedAt": "2025-12-17T05:16:15.449Z",
+  "prefixes": [
+    {
+      "id": "name",
+      "name": "Name",
+      "value": "John Doeeeeeeee",
+      "type": "name"
+    },
+    {
+      "id": "course",
+      "name": "Course",
+      "value": "Advanced React",
+      "type": "course"
+    },
+    {
+      "id": "org",
+      "name": "Organization",
+      "value": "Acme Corp",
+      "type": "organization"
+    },
+    {
+      "id": "date",
+      "name": "Date",
+      "value": "12/17/2025",
+      "type": "date"
+    }
+  ],
+  "elements": [
+    {
+      "id": "text-1765945477556",
+      "type": "text",
+      "content": "{{Name}}",
+      "x": 408,
+      "y": 224,
+      "width": 300,
+      "height": 40,
+      "fontSize": 16,
+      "color": "#ffffff",
+      "fontFamily": "Arial"
+    },
+    {
+      "id": "text-1765947107154",
+      "type": "text",
+      "content": "{{Course}}",
+      "x": 407,
+      "y": 79,
+      "width": 300,
+      "height": 40,
+      "fontSize": 16,
+      "color": "#ffffff",
+      "fontFamily": "Arial"
+    }
+  ],
+  "canvasDimensions": {
+    "width": 1123,
+    "height": 631.6875
+  },
+  "bgFileName": "batman_hd_batman_arkham_shadow-1280x720.jpg",
+  "bgFileSize": 67771,
+  "bgFileType": "image/jpeg",
+  "version": "1.0"
+}
