@@ -98,3 +98,7 @@ Instead of using `html2canvas` (frontend-only), the backend will use the **`canv
 2.  **User View:**
     *   Remove client-side generation logic (`html2canvas`) for end-users.
     *   **Change:** When a user clicks "Download Certificate", call the backend `POST /api/certificates/generate` endpoint and open the returned URL.
+
+## 5. Reference Implementation
+
+A complete code example of the backend generation logic and controller structure can be found in the [`reference_implementation/`](./reference_implementation) directory.
